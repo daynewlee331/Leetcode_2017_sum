@@ -6,6 +6,6 @@ public class Detect_Capital {
         for(char c: word.toCharArray()){
         		if('Z' - c >= 0) count ++;
         }
-        return (count == 0 || count == word.length()) || ('Z' - word.charAt(0) >= 0 && count == 1);
+        return count == 0 || count == word.length() || ('Z' - word.charAt(0) >= 0 && count == 1);
     }
 }
