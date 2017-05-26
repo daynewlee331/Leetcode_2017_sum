@@ -1,6 +1,5 @@
 package Sum1;
 
-
 public class Find_Mode_in_BST {
 	public int[] findMode(TreeNode root) {
 		search(root);
