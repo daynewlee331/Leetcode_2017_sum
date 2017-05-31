@@ -26,10 +26,10 @@ public class Number_of_Connected_Nodes_in_Undirected_Graph {
     }
 	
 	public void search(int k, Map<Integer, Set<Integer>> adjList, Set<Integer> visited){
+		if(visited.contains(k)) return;
+		visited.add(k);
 		if(adjList.containsKey(k)){
 			for(int neighbor: adjList.get(k)){
-				if(visited.contains(neighbor)) continue;
-				visited.add(neighbor);
 				search(neighbor, adjList, visited);
 			}
 		}
