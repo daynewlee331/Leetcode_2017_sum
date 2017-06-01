@@ -4,14 +4,14 @@ public class Flatten_BT_to_LinkedList {
 	TreeNode prev = null;
     public void flatten(TreeNode root) {
         if(root == null) return;
-        TreeNode tmp1 = root.left;
-        TreeNode tmp2 = root.right;
+        TreeNode left = root.left;
+        TreeNode right = root.right;
         if(prev != null) {
             prev.left = null;
         	prev.right = root;
         }
         prev = root;
-        flatten(tmp1);
-        flatten(tmp2);
+        flatten(left);
+        flatten(right);
     }
 }
