@@ -18,7 +18,6 @@ public class Sliding_Window_Maximum {
         	if(i - queue.getFirst() + 1 > k) queue.removeFirst();
         	if(i >= k - 1) buff.add(nums[queue.getFirst()]);
         }
-        //buff.add(window.getFirst());
         int[] res = new int[buff.size()];
         for(int j = 0; j < buff.size(); j ++){
         	res[j] = buff.get(j);
