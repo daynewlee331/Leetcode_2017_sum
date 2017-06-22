@@ -18,7 +18,7 @@ public class Largest_Rectangle_in_Histogram {
         		}
         }
         while(!stack.isEmpty()){
-        		int h = heights[stack.pop()];
+        	int h = heights[stack.pop()];
 			int w = stack.isEmpty()? i : i - stack.peek() - 1;
 			max = Math.max(h * w, max);
         }
