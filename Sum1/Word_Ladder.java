@@ -42,7 +42,7 @@ public class Word_Ladder {
         	len ++;
         }
         
-        return len;
+        return 0;
     }
 	
 	public List<String> getNeighbors(String cur, Set<String> dict){
