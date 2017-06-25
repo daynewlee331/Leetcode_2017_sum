@@ -1,6 +1,5 @@
 package Summer_All_Hard_Questions;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class LRUCache {
