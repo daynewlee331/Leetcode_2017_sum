@@ -28,7 +28,7 @@ public class Remove_Invalid_Parentheses {
 					res.add(cur);
 					isFound = true;
 				}
-		
+				if(isFound) continue;
 				for(int j = 0; j < cur.length(); j ++){
 					if(cur.charAt(j) != '(' && cur.charAt(j) != ')') continue;
 					String neighbor = cur.substring(0, j) + cur.substring(j + 1);
