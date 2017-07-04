@@ -18,7 +18,6 @@ public class Best_Meeting_Point {
         	}
         }
         return getDist(xAxis) + getDist(yAxis);
-        
     }
 	
 	private int getDist(List<Integer> list){
